@@ -17,8 +17,8 @@ describe('verification', function() {
       countdown.start()
     })
 
-    it('timmer > 0', function() {
-      expect(countdown.timer).not.toBeNull()
+    it('timer > 0', function() {
+      expect(countdown.timer).not.toBeNull() // 只有这里和jsdom不一样,node evn setTimeout返回NodeJS.Timeout对象
     })
 
     it('0 <= countdown.count <= 60', async function() {
@@ -42,6 +42,20 @@ describe('verification', function() {
     })
 
     it('30, 60, count is null', function() {
+      expect(countdown.count).toBeNull()
+    })
+  })
+})
+
+describe('callback', function() {
+  describe('callback used', function() {
+    it('used', async function() {
+      const callback = jest.fn()
+      countdown.start(3, 0, callback)
+      await sleep(3000)
+      expect(callback).toHaveBeenCalledTimes(3)
+      countdown.clear()
+      expect(countdown.timer).toBeNull()
       expect(countdown.count).toBeNull()
     })
   })

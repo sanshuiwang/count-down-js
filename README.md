@@ -45,10 +45,49 @@ import { countdown } from 'count-down-js'
 const { countdown } = require('count-down-js')
 ```
 
+### script
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DEMO</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="node_modules/count-down-js/dist/count-down-js.js"></script>
+    <script type="text/javascript">
+      var countdown = window.countdown
+    </script>
+  </body>
+</html>
+```
+
 ## Usage
 
 ```typescript
+// init countdown
+countdown.start(60, 0, c => console.log(c))
+
+OR
+
+countdown.start()
+
+// cleat countdown setTimeout & count & timer
+countdown.clear()
+
+// countdown setTimeout return value
+countdown.timer
+
+// countdown current number
+countdown.count
 ```
+
+### 【countdown.start(count, down, callback)】 accept-expression
+
+`count`: Default 60, type number. count must greater than down, or equal dowm.
+`down`: Default 0, type number
+`callback`: Type (height: number|undefined) => void.
 
 ## LICENSE
 
