@@ -83,10 +83,14 @@ countdown.timer
 countdown.count
 ```
 
-### 【countdown.start(count, down, callback)】 accept-expression
+### accept-expression
+
+#### countdown.start(count, down, callback)
 
 `count`: Default 60, type number. count must greater than down, or equal dowm.
+
 `down`: Default 0, type number
+
 `callback`: Type (height: number|undefined) => void.
 
 ## LICENSE
