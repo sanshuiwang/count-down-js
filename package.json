@@ -1,15 +1,15 @@
 {
-  "name": "count-down-js",
+  "name": "countdown-js",
   "version": "1.0.0",
   "description": "Countdown has timer, count, clear features. Test covered 100%.",
-  "main": "dist/count-down-js.js",
-  "module": "dist/count-down-js.esm.js",
-  "jsnext:main": "dist/count-down-js.esm.js",
+  "main": "dist/countdown-js.js",
+  "module": "dist/countdown-js.esm.js",
+  "jsnext:main": "dist/countdown-js.esm.js",
   "typings": "dist/src/index.d.ts",
   "sideEffects": false,
   "files": [
-    "dist/count-down-js.esm.js",
-    "dist/count-down-js.js",
+    "dist/countdown-js.esm.js",
+    "dist/countdown-js.js",
     "dist/src/"
   ],
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanshuiwang/count-down-js.git"
+    "url": "git+https://github.com/sanshuiwang/countdown-js.git"
   },
   "keywords": [
     "countdown"
@@ -28,9 +28,9 @@
   "author": "sanshuiwang <768188667@qq.com> (https://github.com/sanshuiwang)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/sanshuiwang/count-down-js/issues"
+    "url": "https://github.com/sanshuiwang/countdown-js/issues"
   },
-  "homepage": "https://github.com/sanshuiwang/count-down-js#readme",
+  "homepage": "https://github.com/sanshuiwang/countdown-js#readme",
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "coveralls": "^3.1.0",

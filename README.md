@@ -1,4 +1,4 @@
-# count-down-js
+# countdown-js
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -16,19 +16,19 @@ Countdown has timer, count, clear features. Test covered 100%.
 ### npm
 
 ```bash
-npm install count-down-js --save
+npm install countdown-js --save
 ```
 
 ### yarn
 
 ```bash
-yarn add count-down-js --save
+yarn add countdown-js --save
 ```
 
 ### bower
 
 ```bash
-bower install count-down-js --save
+bower install countdown-js --save
 ```
 
 ## Import
@@ -36,13 +36,13 @@ bower install count-down-js --save
 ### ES2015
 
 ```typescript
-import { countdown } from 'count-down-js'
+import { countdown } from 'countdown-js'
 ```
 
 ### CommonJS
 
 ```javascript
-const { countdown } = require('count-down-js')
+const { countdown } = require('countdown-js')
 ```
 
 ### script
@@ -55,7 +55,7 @@ const { countdown } = require('count-down-js')
     <title>DEMO</title>
   </head>
   <body>
-    <script type="text/javascript" src="node_modules/count-down-js/dist/count-down-js.js"></script>
+    <script type="text/javascript" src="node_modules/countdown-js/dist/countdown-js.js"></script>
     <script type="text/javascript">
       var countdown = window.countdown
     </script>
@@ -95,16 +95,16 @@ countdown.count
 
 ## LICENSE
 
-[GPL v3 License](https://raw.githubusercontent.com/sanshuiwang/count-down-js/master/LICENSE)
+[GPL v3 License](https://raw.githubusercontent.com/sanshuiwang/countdown-js/master/LICENSE)
 
-[npm-url]: https://npmjs.org/package/count-down-js
-[npm-image]: https://badge.fury.io/js/count-down-js.png
-[travis-image]: https://www.travis-ci.org/sanshuiwang/count-down-js.svg?branch=master
-[travis-url]: https://travis-ci.com/sanshuiwang/count-down-js
-[coverage-image]: https://coveralls.io/repos/github/sanshuiwang/count-down-js/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/github/sanshuiwang/count-down-js
-[david-url]: https://david-dm.org/sanshuiwang/count-down-js.png
-[dt-url]: https://img.shields.io/npm/dt/count-down-js.svg
-[license-url]: https://img.shields.io/npm/l/count-down-js.svg
+[npm-url]: https://npmjs.org/package/countdown-js
+[npm-image]: https://badge.fury.io/js/countdown-js.png
+[travis-image]: https://www.travis-ci.org/sanshuiwang/countdown-js.svg?branch=master
+[travis-url]: https://travis-ci.com/sanshuiwang/countdown-js
+[coverage-image]: https://coveralls.io/repos/github/sanshuiwang/countdown-js/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/sanshuiwang/countdown-js
+[david-url]: https://david-dm.org/sanshuiwang/countdown-js.png
+[dt-url]: https://img.shields.io/npm/dt/countdown-js.svg
+[license-url]: https://img.shields.io/npm/l/countdown-js.svg
 [prettier-image]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
 [prettier-url]: https://github.com/prettier/prettier
