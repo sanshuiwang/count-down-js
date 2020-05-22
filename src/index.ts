@@ -1,21 +1,20 @@
-interface CountDownType {
+class Countdown {
   timer: any
   count: number | null
-  clear: () => void
-  start: (c?: number, d?: number, callback?: (c: number) => void) => void
-}
+  constructor() {
+    this.timer = null
+    this.count = null
+  }
 
-export const countdown: CountDownType = {
-  timer: null,
-  count: null,
-  clear: function() {
+  clear() {
     if (this.timer) {
       clearTimeout(this.timer)
       this.timer = null
       this.count = null
     }
-  },
-  start: function(c = 60, d = 0, callback) {
+  }
+
+  start(c: number = 60, d: number = 0, callback?: (c: number) => void) {
     this.clear()
     if (c >= d) {
       this.count = c
@@ -26,3 +25,5 @@ export const countdown: CountDownType = {
     }
   }
 }
+
+export default new Countdown()

@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { countdown } from '@/src'
+import countdown from '@/src'
 
 function sleep(time: number) {
   return new Promise(resolve => setTimeout(resolve, time))
@@ -21,7 +21,7 @@ describe('verification', function() {
       expect(countdown.timer).toBeGreaterThan(0) // 和node env不一样，setTimeout返回timerId
     })
 
-    it('0 <= countdown.count <= 60', async function() {
+    it('0 <= countdown.count <= 60, sleep 3 seconds', async function() {
       expect(countdown.count).toBe(60)
       await sleep(3000)
       expect(countdown.count).toBe(58)
@@ -41,7 +41,8 @@ describe('verification', function() {
       countdown.start(30, 60)
     })
 
-    it('30, 60, count is null', function() {
+    // 后边可以附加功能：当c < d时，throw error tip.
+    it('30, 60, count is null[ start < end ]', function() {
       expect(countdown.count).toBeNull()
     })
   })
@@ -49,7 +50,7 @@ describe('verification', function() {
 
 describe('callback', function() {
   describe('callback used', function() {
-    it('used', async function() {
+    it('callback carry count', async function() {
       const callback = jest.fn()
       countdown.start(3, 0, callback)
       await sleep(3000)
