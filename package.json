@@ -1,6 +1,6 @@
 {
   "name": "count-down-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Countdown has timer, count, clear features. Test covered 100%.",
   "main": "dist/count-down-ts.js",
   "module": "dist/count-down-ts.esm.js",
