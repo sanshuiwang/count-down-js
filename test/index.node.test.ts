@@ -36,14 +36,12 @@ describe('verification', function() {
     })
   })
 
-  describe('[countdown.start(30, 60)] countdown.count is null', function() {
-    beforeEach(() => {
-      countdown.start(30, 60)
-    })
-
-    // 后边可以附加功能：当c < d时，throw error tip.
-    it('30, 60, count is null', function() {
-      expect(countdown.count).toBeNull()
+  describe('[countdown.start(30, 60)]', function() {
+    function cMoreD() {
+      countdown.start(10, 40)
+    }
+    it('30, 60, [ start < end ], throw error message.', function() {
+      expect(cMoreD).toThrowError('count-down-ts start(c, d, callback?) function c must be greater than d.')
     })
   })
 })

@@ -36,13 +36,13 @@ bower install count-down-ts --save
 ### ES2015
 
 ```typescript
-import { countdown } from 'count-down-ts'
+import countdown from 'count-down-ts'
 ```
 
 ### CommonJS
 
 ```javascript
-const { countdown } = require('count-down-ts')
+const countdown = require('count-down-ts')
 ```
 
 ### script
@@ -87,9 +87,9 @@ countdown.count
 
 #### countdown.start(count, down, callback)
 
-`count`: Default 60, type number. count must greater than down, or equal dowm.
+`count`: Default 60, type number. Tips: count must greater than down, or equal down.
 
-`down`: Default 0, type number
+`down`: Default 0, type number.
 
 `callback`: Type (height: number|undefined) => void.
 
