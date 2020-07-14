@@ -91,7 +91,7 @@ countdown.count
 
 `down`: Default 0, type number.
 
-`callback`: Type (height: number|undefined) => void.
+`callback`: Type (c: number) => void.
 
 ## LICENSE
 

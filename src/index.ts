@@ -16,7 +16,7 @@ class Countdown {
 
   start(c: number = 60, d: number = 0, callback?: (c: number) => void) {
     if (c < d) {
-      throw 'count-down-ts start(c, d, callback?) function c must be greater than d.'
+      throw new Error('count-down-ts start(c, d, callback?) function c must be greater than d.')
     }
 
     this.carry(c, d, callback)

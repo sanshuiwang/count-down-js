@@ -59,3 +59,11 @@ describe('callback', function() {
     })
   })
 })
+
+describe('c >= d', function() {
+  describe('carry function', function() {
+    it('carry(5, 10)', async function() {
+      countdown.carry(5, 10)
+    })
+  })
+})
